@@ -5,10 +5,15 @@
   <title>my Angular App</title>
 </head>
 <body>
+  <h1>Funny Reddit</h1>
+
   <div ng-controller="mainController">
-    {{ thing }}
+    <ul>
+      <li ng-repeat="article in redditData">
+        {{ article }}
+      </li>
+    </ul>
   </div>
-  <h1>Hi</h1>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>

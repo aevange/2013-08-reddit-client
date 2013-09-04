@@ -4,6 +4,8 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http) {
     method: 'JSONP',
     url: 'http://www.reddit.com/r/funny.json?jsonp=JSON_CALLBACK'})
     .success(function(response) {
-      $scope.thing = response.data.children;
+      $scope.redditData = response.data.children;
+    }).error(function(err) {
+      throw new Error(err, '</3');
     });
 }]);
