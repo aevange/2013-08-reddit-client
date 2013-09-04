@@ -9,8 +9,8 @@
 
   <div ng-controller="mainController">
     <ul>
-      <li ng-repeat="article in redditData">
-        {{ article }}
+      <li ng-repeat=" (key, value) in redditData">
+        <img ng-src='{{ value.data.thumbnail }}'></img>
       </li>
     </ul>
   </div>
