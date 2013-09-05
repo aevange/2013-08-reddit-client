@@ -14,17 +14,17 @@ Basic requirements
 
 * [x] Use npm to install the dependencies that are listed in the `package.json`.
 * [x] Use `bower` to install the client-side dependencies that are listed in the `bower.json`.
-* [ ] Create a basic AngularJS app skeleton that bootstraps and starts your AngularJS app.
+* [x] Create a basic AngularJS app skeleton that bootstraps and starts your AngularJS app.
 * [ ] Follow the first 4 steps of [this tutorial](http://www.ng-newsletter.com/posts/beginner2expert-how_to_start.html) and implement these app features:
     * [x] Create the angular app in `index.html`
-    * [ ] Create a `MainController` that controls the home screen
-    * [ ] Inside the `MainController` fetch the latest reddit articles through the [reddit api](http://www.reddit.com/dev/api)
-    * [ ] Lay out the view in the front-end to display the articles
-    * [ ] Add a button that rates up and create the corresponding method
-    * [ ] Add a button that rates down and create the corresponding method
+    * [x] Create a `MainController` that controls the home screen
+    * [x] Inside the `MainController` fetch the latest reddit articles through the [reddit api](http://www.reddit.com/dev/api)
+    * [x] Lay out the view in the front-end to display the articles
+    * [x] Add a button that rates up and create the corresponding method
+    * [x] Add a button that rates down and create the corresponding method
 * After the afternoon lecture, complete the following:
-    * [ ] Implement the home route (with controller/templates)
-    * [ ] Implement the login route (with controller/templates)
+    * [x] Implement the home route (with controller/templates)
+    * [x] Implement the login route (with controller/templates)
 
 Extra credit: 
 * [ ] Implement a news listing directive
