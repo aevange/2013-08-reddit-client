@@ -1,9 +1,11 @@
-angular.module('myApp', ['ngRoute', 'myApp.controllers'])
+angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.services'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
+    controller : 'mainController',
     templateUrl: 'templates/login.html'
   })
   .when('/home', {
+    controller : 'mainController',
     templateUrl: 'templates/home.html'
   });
   //otherwise:

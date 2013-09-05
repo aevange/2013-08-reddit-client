@@ -1,5 +1,8 @@
   <ul>
      <li ng-repeat="obj in redditData">
+       <div>{{obj.data.title}}</div>
        <img ng-src='{{ obj.data.thumbnail }}'></img><button ng-click="voteUp(obj)">:D</button><button ng-click="voteDown(obj)">:(</button> {{ obj.votes }}
      </li>
    </ul>
+
+   <div news-update></div>
