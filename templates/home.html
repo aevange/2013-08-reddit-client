@@ -1,7 +1,7 @@
-  <ul>
-     <li ng-repeat="obj in redditData">
-       <div>{{obj.data.title}}</div>
-       <img ng-src='{{ obj.data.thumbnail }}'></img><button ng-click="voteUp(obj)">:D</button><button ng-click="voteDown(obj)">:(</button> {{ obj.votes }}
+  <ul style="list-style:none">
+     <li style="width:250px; text-wrap: true; text-align:center" ng-repeat="obj in redditData | orderBy:'votes':true">
+       <h5>{{obj.data.title}}</h5>
+       <a href="{{obj.data.url}}"><img ng-src='{{ obj.data.thumbnail }}'/></a><button class="btn btn-success" ng-click="voteUp(obj)">:D</button><span class="btn btn-warning">{{ obj.votes }}</span><button class="btn btn-danger" ng-click="voteDown(obj)">:'(</button>
      </li>
    </ul>
 
